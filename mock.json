@@ -1,0 +1,14 @@
+{
+	"id": "52c37cfa-b1fa-4c13-a796-30dc358b0288",
+	"name": "mock_duration",
+	"values": [
+		{
+			"key": "url",
+			"value": "https://55067d9e-9da8-4783-9bf0-883aace844a9.mock.pstmn.io",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2019-07-23T15:37:24.621Z",
+	"_postman_exported_using": "Postman/7.2.2"
+}

@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "80816990-c975-4eae-9e34-5eaf9d87928e",
+		"name": "duration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "duration/19950802/20190723",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "839e4691-4355-41df-84be-2ccddac11876",
+						"exec": [
+							"pm.test(\"From Wednesday, 2 August 1995\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.from).to.eql(\"Wednesday, 2 August 1995\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/duration/19950802/20190723",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"duration",
+						"19950802",
+						"20190723"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/duration/19950802/20190723",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"duration",
+								"19950802",
+								"20190723"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"from\": \"Wednesday, 2 August 1995\",\n    \"to\": \"Tuesday, 23 July 2019\",\n    \"resultDays\": 8757,\n    \"resultSeconds\": 756604800,\n    \"resultMinutes\": 12610080,\n    \"resultHours\": 210168,\n    \"resultWeeks\": 1251\n}"
+				}
+			]
+		}
+	]
+}
